@@ -1,0 +1,57 @@
+Was braucht man:
+
+PC zum hosten
+MariaDB
+Apache
+PHP
+Wordpress
+ggf htop installieren
+
+
+Erstmal alle Servicepakete updaten
+
+SSH ermöglichen, wenn man über anderen PC ranmöchte           ->  ssh hosting@-->IP<--
+
+                                                                  sshd_config
+                                                                  
+                                                                  sudo systemctl start sshd.service
+                                                                  
+                                                                  systemctl stop telnet.service
+                                                                  
+                                                                  sudo dnf install -y openssh-server
+                                                                  
+                                                                  sudo systemctl start sshd.service
+                                                                  
+                                                                  sudo firewall-cmd --add-service=http --permanent
+                                                                  
+                                                                  sudo firewall-cmd --reload
+                                                                  
+                                                                  
+  
+Unzip installieren                                            ->  sudo yum install unzip
+
+Wordpress (Paket) downloaden, dann in den Downloadordner      ->  cd /Downloads/
+
+Wordpress entpacken                                           ->  unzip Dateiname (Bsp: unzip wordpress-5.6-de_DE.zip)
+
+Wordpress in den richtigen Ordner bewegen                     ->  sudo mv wordpress /var/www/html/wordpress
+
+PHP installieren                                              ->  sudo dnf install php php-mysqlnd
+
+Webserver neustarten                                          ->  systemctl restart httpd <-- damit alle gewollten Services laufen
+
+MariaDB sowie MariaDB Server installieren                     ->  sudo dnf install mariadb mariadb-server
+
+sudo mysql_secure_installation ausführen                      ->  mysql_secure_installation is a shell script available on Unix systems, and enables you to improve the security of your MariaDB installation
+
+ggf Sicherheit runterstellen for Science                      ->  vi /etc/selinux/config 
+
+
+Kiste evtl neustarten, wenn alles gedownloadet und installiert
+wurde                                                          -> init 6
+
+Besitzer des Wordpress Ordners umändern                        -> sudo chown -R apache:apache wordpress
+
+
+
+
