@@ -1,11 +1,24 @@
-Was braucht man:
+!(https://i.redd.it/glwsbr1cujaz.png)
 
-PC zum hosten
-MariaDB
-Apache
-PHP
-Wordpress
-ggf htop installieren
+
+
+
+**Prerequisites**
+
+
+* PC zum hosten
+* MariaDB
+* MariaDB Server
+* Apache
+* PHP
+* Wordpress
+
+
+*Optional*
+
+*Remote Acces über SSH bereitstellen
+*mlocate installieren 
+
 
 
 Erstmal alle Servicepakete updaten
@@ -42,6 +55,8 @@ Webserver neustarten                                          ->  systemctl rest
 
 MariaDB sowie MariaDB Server installieren                     ->  sudo dnf install mariadb mariadb-server
 
+MYSQLUSER/Mariadbuser erstellen,Password geben                ->    CREATE USER 'tureuser'@% IDENTIFIED BY 'test123';
+
 sudo mysql_secure_installation ausführen                      ->  mysql_secure_installation is a shell script available on Unix systems, and enables you to improve the security of your MariaDB installation
 
 ggf Sicherheit runterstellen for Science                      ->  vi /etc/selinux/config 
@@ -52,6 +67,10 @@ wurde                                                          -> init 6
 
 Besitzer des Wordpress Ordners umändern                        -> sudo chown -R apache:apache wordpress
 
+Rechte für Datenbank für Nutzer ändern, vorher in Datenbank
+wechseln                                                       -> use "Datenbankname" dann
+                                                                  GRANT ALL PRIVILEGES ON *.* TO 'tureuser'@'%' IDENTIFIED BY 'test123';
 
 
+systemctl enable httpd oder mariadb, falls services nicht automatisch starten!!!!!
 
