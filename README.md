@@ -75,6 +75,14 @@
 * Schreiben und verlassen                                 : Esc :wq!
 * Zeile löschen                                           : dd
 
+
+**GIT**
+
+
+* Git Repository auschecken                             git clone *Repository-Addresse*
+
+
+
 *Optional*
 
 * Remote Acces über SSH bereitstellen
