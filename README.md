@@ -52,6 +52,7 @@
 * Besitzer eines Ordners ändern                         sudo chown -R *Benutzername*:*Benutzergruppe* *Ordnerpfad*
                                                       **(Bsp.: sudo chown -R apache:apache wordpress)**
 * Neustart aus der Shell                                init 6
+* Datein nach String durchsuchen                        grep -r 'String' 
 
 **Datenbank**
 
