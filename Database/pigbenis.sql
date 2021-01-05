@@ -1,6 +1,6 @@
 -- MySQL dump 10.17  Distrib 10.3.17-MariaDB, for Linux (x86_64)
 --
--- Host: localhost    Database: pigbenis
+-- Host: localhost    Database: wordpress
 -- ------------------------------------------------------
 -- Server version	10.3.17-MariaDB
 
