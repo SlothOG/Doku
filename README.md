@@ -35,6 +35,8 @@
 * Besitzer des Wordpressordners auf Webserveruser ändern
 * Wordpress installation durchlaufen
 
+
+
 **Nützliche Befehle**
 
 * Datenbankverbindung herstellen :                      mysql -uroot -p
@@ -66,6 +68,23 @@
 * Spalten einer Tabelle anzeigen                        describe *Tabellename*
 * Gesamten Inhalt einer Tabelle anzeigen                select * from *Tabellenname*
 * Datenbankkonsole verlassen                            exit
+
+
+**Docker/-Podman** (Fedora Edgecase)
+
+  * podman run .. "Imagename" /bin/bash               Imagename + Bash Shell                              *
+  * --rm                                               remove*
+  * -v                                                Volume (Bsp.: home/terminal:/home/terminal = Pfad:Pfad)*
+  * --privileged                                       mit Root-rechten* 
+  * -p                                                Port öffnen (Bsp.: -p 80)*
+  * -it                                               Interactive
+  
+
+
+
+
+
+
 
 **VI**
 
