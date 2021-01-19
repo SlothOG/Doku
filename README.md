@@ -70,14 +70,19 @@
 * Datenbankkonsole verlassen                            exit
 
 
-**Docker/-Podman** (Fedora Edgecase)
+**Docker/-Podman** (Fedora Edgecase) <-- immer mit sudo ausführen
 
   * podman run .. "Imagename" /bin/bash               Imagename + Bash Shell                              *
-  * --rm                                               remove*
-  * -v                                                Volume (Bsp.: home/terminal:/home/terminal = Pfad:Pfad)*
+  * --rm                                              Container entfernen, wenn gestoppt
+  * -v                                                Volume (Bsp.: home/terminal:/home/terminal = SOURCEPfad:DEESTINATIONPfad)*
   * --privileged                                       mit Root-rechten* 
-  * -p                                                Port öffnen (Bsp.: -p 80)*
+  * -p                                                Port öffnen (Bsp.: -p 80:81   )*
   * -it                                               Interactive
+  * stop                                              Container stoppen
+  * start                                             Container starten
+  * --name                                            BSP --name wordpress3 wordpress:2
+  * sudo docker ps                                    
+  * sudo docker run --rm -p 80:80 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content --name wordpress3 wordpress:2
   
 
 
@@ -99,6 +104,7 @@
 
 
 * Git Repository auschecken                             git clone *Repository-Addresse*
+
 
 
 
