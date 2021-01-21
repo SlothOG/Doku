@@ -10,10 +10,11 @@ RUN apt-get install -y tzdata
 RUN dpkg-reconfigure --frontend noninteractive tzdata
 RUN apt -y install apache2 mariadb-server php php-mysqlnd wget curl 
 ADD scripts /tmp/scripts
-RUN /etc/init.d/mysql start && sh /tmp/scripts/mysql_se-deb.sh && mysql -uroot < /tmp/scripts/create-database.sql && mysql --password=test123 --user=test123 wordpress < /tmp/scripts/pigbenis.sql
+RUN /etc/init.d/mysql start && sh /tmp/scripts/mysql_se-deb.sh && mysql -uroot < /tmp/scripts/create-database.sql
 RUN wget -nc https://de.wordpress.org/latest-de_DE.tar.gz -P /tmp/ && tar xvzf /tmp/latest-de_DE.tar.gz -C /var/www/html/
 ADD /Config/wp-config.php /var/www/html/wordpress/
 RUN chown -R www-data:www-data /var/www/html/
 EXPOSE 80
+EXPOSE 3306
 CMD /etc/init.d/mysql start &&  /usr/sbin/apache2ctl -D FOREGROUND
 #
