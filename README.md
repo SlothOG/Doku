@@ -82,8 +82,7 @@
   * start                                             Container starten
   * --name                                            BSP --name wordpress3 wordpress:2
   * sudo docker ps                                    
-  * sudo docker run --rm -p 80:80 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content --name wordpress3 wordpress:2
-  
+  * sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/mysql:/var/lib/mysql -v /data/container/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d --name wordpress1 wordpress:5
 
 
 
