@@ -1,0 +1,2000 @@
+cd ..
+ls
+mv wp-content/db/ db/
+sudo mv wp-content/db/ db/
+cd db
+ll
+cd ..
+mv
+mv db/ db
+mv db/ dbtmp
+ll
+cd dbtmp
+ll
+cd ..
+mv dbtmp/db db
+sudo mv dbtmp/db db
+ll
+
+ll
+cd ..
+rm dbtmp
+ll
+sudo rm -rf dbtmp
+sudo docker run --rm -p 80:80 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/mysql:/var/lib/mysql --name wordpress1 wordpress:3
+sudo docker ps
+sudo docker run --rm -p 80:80 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/mysql:/var/lib/mysql --name wordpress1 wordpress:3
+sudo docker ps
+docker logs
+docker logs wordpress1
+sudo docker logs wordpress1
+sudo docker ps
+ls
+sudo chmod 777 -R db
+ll
+sudo docker run --rm -p 80:80 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/mysql:/var/lib/mysql --name wordpress1 wordpress:3
+sudo docker logs
+sudo docker logs wordpress1
+sudo docker stop wordpress1
+sudo docker run --rm -p 80:80 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/mysql:/var/lib/mysql --name wordpress1 wordpress:3
+mysql -uroot
+netstat -tpln
+sudo systemctl mysql stop
+sudo systemctl stop mysql
+netstat -tpln
+sudo docker run --rm -p 80:80 -p 3306:3306 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/mysql:/var/lib/mysql --name wordpress1 wordpress:4
+sudo docker stop wordpress1
+sudo docker run --rm -p 80:80 -p 3306:3306 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/mysql:/var/lib/mysql --name wordpress1 wordpress:4
+
+ifconfig
+mysql -uroot -h172.17.0.1
+
+sudo docker print wordpress1
+man docker
+docker --help
+
+mysql -uroot -p
+telnet -p 3306
+telnet  --p 3306
+telnet  -port 3306
+telnet localhost 3306
+telnet 127.0.0.1 3306
+sudo docker ps
+sudo updatedb
+locate mysqld.sock
+sudo docker exec -it wordpress1 /bin/bash
+git status
+cd..
+cd ~
+cd /home/terminal/Doku/
+ls
+git status
+git add *
+git commit
+git push
+cd ..
+ls
+cd deployment
+ls
+less create-database.sql 
+cd /data/container/wordpress/
+cd /data/container/wordpress1/
+ls
+cd wp-content
+ls
+ll
+touch penis.txt
+ll
+cd ~
+cd /home/terminal/Doku
+ls
+cd Dockerfile/container
+ls
+nano Dockerfile
+sudo docker build --tag wordpress:4 .
+netstat -tpln
+mysql -utest -p
+mysql -utest123 -p
+ls
+cd scripts
+ls
+less create-database.sql 
+mysql -utest123
+mysql -utest123 -p
+mysql -utest123 -p password
+less create-database.sql 
+nano create-database.sql 
+mysql -utest123 -p
+sudo docker ps
+less create-database.sql 
+sudo docker run --rm -p 80:80 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/wordpress:/var/lib/mysql/wordpress --name wordpress1 wordpress:4
+sudo docker exec -it wordpress1 /bin/bash
+mysql -u root -h localhost -p 
+mysql -u test123 -h localhost -p 
+mysql -h 127.0.0.1 -u
+mysql -h 127.0.0.1 -u test123 -p
+sudo docker stop wordpress 1
+sudo docker stop wordpress1
+cd /etc/mysql/mariadb.conf.d
+ls
+ll
+cd ..
+ls
+cd ..
+ls
+cd /home/terminal
+cd home
+cd ~
+ls
+cd ..
+ls
+cd home
+cd terminal
+ls
+cd /
+ls
+cd home
+ls
+cd termional
+cd terminal
+ls
+cd Doku
+ls
+cd config
+ls
+mkdir mariadb.conf.de
+ls
+pwd
+ls
+rm -rf mariadb.conf.de
+s
+ls
+cd mariadb.conf.d
+ls
+cd ..
+chmod 777 mariadb.conf.d
+ls
+pwd
+cd mariadb.conf.d
+pwd
+ls
+cd ..
+pwd
+ll
+pwd
+cd mariadb.conf.d
+ls
+pwd
+ls
+cd /data/container/config
+
+pwd
+cd ..
+ls
+cd /home/terminal/Doku
+ls
+cd Dockerfile
+ls
+cd container
+ls
+nano Dockerfile
+vi Dockerfile
+nano Dockerfile
+nano -l Dockerfile
+fg
+nano -l Dockerfile
+locate wp-config.php
+sudo updatedb
+locate wp-config.php
+locate wp-content
+ls
+cd /data/container
+ls
+cd wordpress2
+ls
+cd mysql
+pwd
+ls
+cd ..
+cd wordpress1
+ls
+cd db
+ls
+cd mysql
+ls
+cd ..
+ls
+cd wordpress2
+ls
+chmod 777 mysql
+cd mysql
+ls
+cd ..
+ls
+chmod 777 wp-config.php
+chmod 777 wp-content
+ll
+cd wp-content/
+ll
+cd ..
+cd mysql/
+ll
+cd ..
+chmod 777 -R mysql
+sudo chmod 777 -R mysql
+sudo chmod 777 -R wp-content/
+ll
+cd mysql/
+ll
+less /etc/passwd
+mysql -utest -ptest123
+mysql -utest123 -ptest123
+mysql -utest123 -p
+
+mysql -h 0.0.0.0 -P 3306 --protocol=tcp -utest123 -p
+mysql -h 127.0.0.1 -P 3306 --protocol=tcp -utest123 -p
+sudo ufw status
+sudo ufw disable
+mysql -h 127.0.0.1 -P 3306 --protocol=tcp -utest123 -p
+mysql -h 127.0.0.1 -P 3306 -utest123 -p
+mysql -h 127.0.0.1 -utest123 -p
+mysql  -utest123 -p
+mysql -h localhost  -utest123 -p
+mysql -h 127.0.0.1  -utest123 -p
+mysql -h 127.0.0.1  -uroot -p
+mysql -h 127.0.0.1  -utest123 -p
+clear
+sudo docker ps
+sudo docker stop
+sudo docker stop wordpress1
+cd /data/container
+ls
+cd wordpress1
+cd wp-content
+ll
+mkdir mariadb.conf.d
+ll
+sudo chmod 777 mariadb.conf.d
+ll
+cd ..
+ls
+cd container
+ll
+cd Doku
+.. cd Doku
+cd ~
+cd Doku
+cd terminal
+ls
+cd Dockerfile/
+ll
+cd container
+ll
+nano Dockerfile
+cd ..
+ll
+cd container
+ll
+mkdir mariadb.conf.de
+ls
+rm mariadb.conf.de
+rm -rf mariadb.conf.de
+cd .. 
+cd ..
+cd /var/www/html/wordpress/wp-content
+ls
+
+cd /data/container/wordpress1/wp-content
+ls
+cd mariadb.conf.d
+ls
+cp -r /data/container/wordpress1/wp-content/mariadb.conf.d /home/terminal/Doku/config/
+ls
+cd ..
+ls
+cd wp-content
+ls
+mariadb.conf.d
+cd mariadb.conf.d
+ls
+cd ..
+ls
+rm -mariadb.conf.d
+rm -rf mariadb.conf.d
+ls
+pwd
+cd ..
+cd /
+ls
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker stop wordpress1
+sudo docker ps
+cd..
+cd ~
+cd
+cd~
+cd ~
+ls
+cd /
+cd data
+ls
+cd container
+ls
+mkdir config
+ls
+chmod 777 config
+ls
+sudo /home/terminal/Doku/config/mariadb.conf.d /data/container/config
+sudo cp -r /home/terminal/Doku/config/mariadb.conf.d /data/container/config
+ls
+cd config
+ls
+chmod 777 mariadb.conf.d/
+sudo chmod 777 mariadb.conf.d/
+ls
+cd mariadb.conf
+cd mariadb.conf.d/
+ls
+pwd
+sudo docker ps
+ls
+cd ~
+clear 
+sudo docker ps
+sudo docker stop wordpress1
+cd /data/container/
+ls
+cd wordpress1
+ls
+cd wp-content
+ls
+cd ~
+cd Doku
+ls
+cd Dockerfile
+ls
+cd container
+ls
+sudo nano Dockerfile
+ls
+cd ..
+cd..
+cd /
+ls
+cd /tmp/
+ls
+sudo docker ps
+sudo docker stop
+sudo docker stop wordpress1
+locate wp-config.php
+ls
+locate wordpress2
+ll
+cp wp-config.php /data/container/wordpress2
+cp -r wp-content /data/container/wordpress2
+cp mysql /data/container/wordpress2
+cp -r  mysql /data/container/wordpress2
+sudo cp -r  mysql /data/container/wordpress2
+cd /data/container/wordpress2
+ls
+pwd
+ll#
+ll
+cd mysql
+ls
+pwd
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d --name wordpress1 wordpress:6
+cd /var/lib/mysql/
+ls
+pwd
+cd /#
+cd /home/terminal/Doku
+ls
+cd Dockerfile
+ls
+cd container
+ls
+cd .. 
+cd ..
+cd wordpress
+ls
+cd wp-content
+ls
+cd /home/terminal/
+locate wordpress2
+cd /data/container/wordpress2/
+ls
+sudo docker stop
+sudo docker stop wordpress1
+ls
+sudo docker ps
+sudoclear
+clear
+ll
+locate Dockerfile
+cd /home/terminal/Doku/
+ls
+cd Dockerfile
+ls
+cd container
+ls
+sudo nano Dockerfile
+sudo docker ps
+sudo docker build --tag wordpress:7 .
+sudo docker stop
+sudo docker stop wordpress1
+ls
+cd ..
+ls
+cd /data/
+ls
+cd container
+ls
+config
+cd config
+ls
+cd mariadb.conf.d
+ls
+cd .. 
+ls
+cd ..
+ls
+cd wordpress2
+ls
+pwd
+locate wp-config.php
+nano /var/www/html/wordpress/wp-config.php
+nano /data/container/wordpress2/wp-config.php
+ls
+pwd
+cd mysql
+ls
+mysql
+cd mysql
+ls
+cd /
+ls
+cd var
+cd lib
+cd mysql
+ls
+pwd
+ls
+mysqlconfig
+locate mysqlconfig
+cd ..
+cd etc
+ls
+cd var
+cd config
+cd myql
+locate my.cnf
+cd /data/container/
+
+cd -r /data/container/config wordpress2/
+cp -r /data/container/config wordpress2/
+cd wordpress2
+ll
+cd config/
+ll
+cd ..
+mv wp-config.php config/
+ll
+cd config/
+ll
+sudo docker logs wordpress1
+sudo apt install libreoffice
+sudo apt-get libreoffice
+sudo update
+sudo upgrade
+sudo apt upgrade
+sudo docker ps
+sudo docker run --rm -p 80:80 -p 3306:3306 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/mysql:/var/lib/mysql --name wordpress1 wordpress:4
+sudo docker ps
+sudo apt remove mariadb-server
+netstat -tpln
+systemctl stop mysql
+netstat -tpln
+systemctl disable mysql
+sudo systemctl disable mysql
+netstat -tpln
+sudo docker run --rm -p 80:80 -p 3306:3306 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/mysql:/var/lib/mysql --name wordpress1 wordpress:4
+sudo sytemctl stop apache2
+sudo systemctl stop apache2
+sudo systemctl disable apache2
+sudo docker ps
+sudo docker run --rm -p 80:80 -p 3306:3306 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/mysql:/var/lib/mysql --name wordpress1 wordpress:4
+mysql -utest123 -p
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker stop wordpress1
+nano ~/Doku/Dockerfile/container/
+nano ~/Doku/Dockerfile/container/Dockerfile 
+Docker build --tag wordpress:5 ~/Doku/Dockerfile/container/ 
+docker build --tag wordpress:5 ~/Doku/Dockerfile/container/ 
+sudo docker build --tag wordpress:5 ~/Doku/Dockerfile/container/ 
+sudo docker run --rm -p 80:80 -p 3306:3306 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/mysql:/var/lib/mysql --name wordpress1 wordpress:5
+
+sudo docker ps
+docker exec -it wordpress1 /bin/bash
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker ps
+sudo docker stop wordpress1
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/mysql:/var/lib/mysql --name wordpress1 wordpress:5
+docker exec -it wordpress1 /bin/bash
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/mysql:/var/lib/mysql --name wordpress1 wordpress:5
+sudo docker exec -it wordpress1 /bin/bash
+exit+
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/mysql:/var/lib/mysql --name wordpress1 wordpress:5
+cd /etc/mysql/mariadb.conf.d
+ls
+
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/mysql:/var/lib/mysql -v /home/terminal/Doku/config/mariadb.conf.d /etc/mysql/mariadb.conf.d  --name wordpress1 wordpress:5
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/mysql:/var/lib/mysql -v /home/terminal/Doku/config/mariadb.conf.d /etc/mysql/mariadb.conf.d --name wordpress1 wordpress:5
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/mysql:/var/lib/mysql -v /home/terminal/Doku/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d --name wordpress1 wordpress:5
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/mysql:/var/lib/mysql -v /data/container/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d --name wordpress1 wordpress:5
+sudo docker exec -it wordpress1 /bin/bash
+cd /home/terminal/Doku
+ls
+git status
+git add .
+git commit -m 'Aenderung mariadb.conf.d Mapping'
+git push
+git pull 
+git push
+git log
+cd /data/#
+cd /data/
+ls
+cd container
+ls
+cd wordpress1
+ls
+cd wp-content
+ls
+cd ..
+ls
+sudo docker build --tag wordpress:6 ~/Doku/Dockerfile/container/ 
+docker build --tag wordpress:6 ~/Doku/Dockerfile/container/ 
+
+docker build --tag wordpress:6 ~/Doku/Dockerfile/container/
+sudo docker build --tag wordpress:6 ~/Doku/Dockerfile/container/
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /tmp:/tmp --name wordpress1 wordpress:6
+
+ls
+sudo docker stop
+sudo docker stop wordpress1
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /tmp:/tmp --name wordpress1 wordpress:6
+ls
+sudo docker stop wordpress1
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:6
+sudo docker ps
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:6
+sudo docker ps
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content -it /bin/bash --name wordpress1 wordpress:7
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content  --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content  --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content  --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content  --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker stop wordpress1
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content  --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker stop wordpress1
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker logs
+sudo docker logs wordpress1
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content  --name wordpress1 wordpress:7
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker stop
+sudo docker stop wordpress1
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content -v  --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker stop wordpress1
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker stop wordpress1
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content -v  --name wordpress1 wordpress:7
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker logs
+sudo docker logs wordpress1
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker logs wordpress1
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker logs wordpress1
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker logs wordpress1
+sudo docker run --rm -it /bin/bash -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker run --rm -it /bin/bash/ -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -/etc/mysql/my.cnf:/etc/mysql/my.cnf -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /etc/mysql/my.cnf:/etc/mysql/my.cnf -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker status wordpress1
+sudo docker logs wordpress1
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /etc/mysql/my.cnf:/etc/mysql/my.cnf -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker  docker logs wordpress1
+sudo docker logs wordpress1
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+git status
+cd ..
+cd Doku
+cd /home/terminal/Doku
+git status
+ls
+sudo docker stop wordpress1
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress1/db/mysql:/var/lib/mysql -v /data/container/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker stop wordpress1
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo apt install libreoffice
+grep Fehltage
+sudo apt install ssh
+sudo apt install atmoz
+apt list --installed
+apt-cache search atmoz
+apt-cache search .
+sudo apt-get update
+apt install openssh
+sudo apt install openssh
+sudo apt install openssh-server
+ls
+cd Doku
+ls
+mkdir sftp
+cd sftp
+ls
+git pull atmoz
+sudo git pull atmoz
+git pull https://github.com/atmoz/sftp.git
+docker pull atmoz/sftp
+sudo docker pull atmoz/sftp
+ls
+sudo updatedb
+locate atmoz
+locate conf
+locate sftp
+git clone https://github.com/atmoz/sftp.git
+ls
+rm -r sftp
+ls
+cd ..
+git clone https://github.com/atmoz/sftp.git
+ls
+cd sftp
+chmod 777 -r sftp
+sudo chmod 777 -r sftp
+ls
+cd ..
+ls
+sudo chmod 777 -r sftp
+ls
+sudo chmod -r 777 sftp
+ls
+sudo chmod -r 777 sftp
+sudo chown -help
+chown -man
+chown --help
+ll
+cd sftp
+
+chmod -r 
+chmod -r --help
+pwd
+chmod 777 -r /home/terminal/Doku/stfp
+sudo chmod 777 -r /home/terminal/Doku/stfp
+sudo chmod /home/terminal/Doku/sftp  -777 -r
+ls
+cd ..
+ls
+cd sftp
+rm -r sftp
+sudo rm -r sftp
+ls
+git clone https://github.com/atmoz/sftp.git
+ls
+cd sftp
+ös
+ls
+chmod 777 -r /home/terminal/Doku/sftp
+sudo chmod 777 -r /home/terminal/Doku/sftp
+ls
+cd ..
+ls
+cd sftp
+ls
+ll
+cd ..
+ll
+sudo chmod 777 -R /home/terminal/Doku/sftp
+ll
+cd sftp
+ll
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker ps
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+ls
+sudo docker ps
+docker run -p 22:22 -d atmoz/sftp foo:pass:::upload
+sudo docker run -p 22:22 -d atmoz/sftp foo:pass:::upload
+docker run     -v <host-dir>/upload:/home/foo/upload     -p 2222:22 -d atmoz/sftp     foo:pass:1001
+docker run     -v home/terminal/upload:/home/foo/upload     -p 2222:22 -d atmoz/sftp     foo:pass:1001
+sudo docker run     -v home/terminal/upload:/home/foo/upload     -p 2222:22 -d atmoz/sftp     foo:pass:1001
+sudo docker run -v home/terminal/upload:/home/foo/upload -p 2222:22 -d atmoz/sftp foo:pass:1001
+ls
+cd files
+ls
+ll
+cd ..
+ll
+cd Dockerfile
+docker run -p 22:22 -d atmoz/sftp foo:pass:::upload
+sudo docker run -p 22:22 -d atmoz/sftp foo:pass:::upload
+netstat -tpln
+docker run -p 22:22 -d atmoz/sftp foo:pass:::upload
+docker build docker run -p 22:22 -d atmoz/sftp foo:pass:::upload
+ls
+clear
+docker run -p 22:22 -d atmoz/sftp foo:pass:::uploadls
+ls
+sudo docker run -p 22:22 -d atmoz/sftp foo:pass:::uploadls
+ls
+vi Dockerfile
+sudo docker ps
+docker build docker run -p 22:22 -d atmoz/sftp foo:pass:::upload
+sudo docker build docker run -p 22:22 -d atmoz/sftp foo:pass:::upload
+sudo docker build docker run -p 22:2222 -d atmoz/sftp foo:pass:::upload
+docker run -p 22:22 -d atmoz/sftp foo:pass:::upload
+sudo docker run -p 22:22 -d atmoz/sftp foo:pass:::upload
+sudo docker run -p 2222:22 -d atmoz/sftp foo:pass:::upload
+sudo docker ps
+ll
+cd ~
+ls
+cd /
+ls
+cd data
+ls
+cd container
+ls
+cd wordpress
+cd ~ 
+cd Doku
+ls
+cd Dockerfile
+ls
+cd container
+ls
+vi Dockerfile
+cd ..
+ls
+cd deployment
+cd
+ls
+cd Doku
+cd deployment
+ls
+vi mysql_se-deb.sh
+ls
+cd Doku
+ls
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+ifconfig
+sudo docker ps
+sudo docker run -p 2222:22 -d atmoz/sftp foo:pass:::upload
+sudo docker ps
+sudo docker exec -it practical_noether /bin/bash
+cd Doku
+ls
+cd deployment
+ls
+cd wordpress
+ls
+cd ..
+cd wordpress
+ls
+cd wp-content
+ls
+. 
+cd ..
+ls
+locate wordpress2
+cd /data/#
+cd /data/
+ls
+cd container
+ls
+cp -help
+cp --help
+ls
+cp man
+man cp
+ls
+cd wordpress2
+pwd
+cp --help
+cp -R /data/container/wordpress2 /data/container/wordpress3
+ls
+cd ..
+ls
+cd wordpress 3
+cd wordpress3
+s
+ls
+cp -R /data/container/wordpress2 /data/container/wordpress4
+ls
+cd ..
+ls
+rm -R wordpress3
+ls
+rm -R wordpress4
+sudo cp -R /data/container/wordpress2 /data/container/wordpress3
+sudo cp -R /data/container/wordpress2 /data/container/wordpress4
+
+sudo cp -R /data/container/wordpress2 /data/container/wordpress5
+sudo docker run -p 2222:22 -d atmoz/sftp foo:pass:::upload
+ls
+sudo docker ps
+sudo docker stop
+sudo docker stop  wordpress 1
+sudo docker stop wordpress1
+sudo docker stop atmoz/sftp
+sudo docker stop romatic_stonebraker
+sudo docker ps
+sudo docker stop 717caf864018
+sudo docker run -p 2222:22 -d atmoz/sftp foo:pass:::upload --name PigBenis
+sudo docker ps
+ls
+sudo docker run -p 2222:22 -d atmoz/sftp foo:pass:::upload --name PigBenis
+sudo docker p
+sudo docker run -p 2222:22 -d atmoz/sftp foo:pass:::upload
+sudo docker ps
+sudo docker stop ced31ff03ed8
+cd /data
+ls
+cd container
+ls
+chmod 777 -r wordpress3
+sudo chmod 777 -r wordpress3
+ls
+sudo chmod 777 -R wordpress3
+ls
+sudo chmod 777 -R wordpress4
+sudo chmod 777 -R wordpress5
+
+sudo docker run -p 2222:22 -d atmoz/sftp foo:pass:::upload
+ls
+sudo docker ps
+ls
+cd ..
+ls
+cd ..
+ls
+cd ~
+ls
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker psh
+sudo docker ps
+sudo docker stop c06b2132adb3
+sudo docker run -p 2222:22 -it /bin/bash -d atmoz/sftp foo:pass:::upload
+sudo docker run -p 2222:22 -d atmoz/sftp foo:pass:::upload -it /bin/bash#
+sudo docker ps
+sudo docker run -p 2222:22 -d atmoz/sftp foo:pass:::upload -it /bin/bash
+sudo docker ps
+ls
+sudo docker run -p 2222:22 -d atmoz/sftp foo:pass:::upload -it /bin/bash
+sudo docker ps
+sudo docker run -it -p 2222:22 -d atmoz/sftp foo:pass:::upload /bin/bash
+sudo docker ps
+sudo docker run -it -p 2222:22 /bin/bash
+sudo docker run -it -p 2222:22 -d atmoz/sftp foo:pass:::upload /bin/bash
+sudo docker ps
+docker logs
+sudo docker run -p 2222:22 -d atmoz/sftp foo:pass:::upload
+sudo docker ps
+sudo docker exec -it 091907317a20 /bin/bash
+sudo docker ps
+sudo docker exec -it 091807317a20 /bin/bash
+ls
+sudo updatedb
+locate *
+locate *.doc
+locate *.pdf
+sudo docker run -p 2222:22 -d atmoz/sftp foo:pass:::upload
+ls
+sudo docker ps
+sudo docker exec -it 091807317a20 /bin/bash
+ls
+cd /data
+ls
+cd container
+ls
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress2/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress2/mysql:/var/lib/mysql -v /data/container/wordpress2/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress2/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker ps
+sudo docker exec -it flamboyant_volhard /bin/bash
+ssh-keygen -t ed25519 -f ssh_host_ed25519_key < /dev/null
+sudo docker ps 
+ipconfig
+ifconfig
+sudo docker exec -it flamboyant_volhard /bin/bash
+sudo docker ps
+sudo docker stop flamboyant_volhard
+sudo docker ps
+sudo docker stop wordpress1
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress3/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress3/mysql:/var/lib/mysql -v /data/container/wordpress3/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress3/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+sftp -P 2222 foo@172.31.34.60
+sftp -P 22 foo@172.31.34.60
+sftp -P 2222 foo@172.31.34.60
+apt instal sftpclient
+apt install sftp client
+sudo apt install sftp client
+sudo apt install sftp
+sudo apt install sftpapp
+sftp -P 2222 foo@172.31.34.60
+sudo docker run -p 2222:22 -d atmoz/sftp foo:pass:::upload
+sudo updatedb
+locate users.conf
+
+sftp -P 2222 bar@172.31.34.60
+locate ssh/config
+sudo updatedb
+cd ~
+cd .ssh
+ll
+cd config
+cd .
+ls
+ll
+vi known_hosts
+touch config
+vi config
+sudo docker ps
+sudo docker stop dazzling_buck
+sudo docker ps
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress3/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress3/mysql:/var/lib/mysql -v /data/container/wordpress3/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress3/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker exec -it wordpress1 /bin/bash
+sudo docker ps
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress3/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress4/mysql:/var/lib/mysql -v /data/container/wordpress4/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress4/wp-content:/var/www/html/wordpress/wp-content --name wordpress1 wordpress:7
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress3/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress4/mysql:/var/lib/mysql -v /data/container/wordpress4/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress4/wp-content:/var/www/html/wordpress/wp-content --name wordpress2 wordpress:7
+sudo docker ps
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress3/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress4/mysql:/var/lib/mysql -v /data/container/wordpress4/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress4/wp-content:/var/www/html/wordpress/wp-content --name penis wordpress:7
+sudo docker ps
+sudo docker stop wordpress1
+sudo docker run -p 2222:22 -d atmoz/sftp foo:pass:::upload
+locate user.conf
+locate users.conf
+vi /home/terminal/Doku/sftp/tests/files/users.conf
+cd /home/terminal/Doku/sftp/tests/files/users.conf
+cd /home/terminal/Doku/sftp/tests/files/
+ls
+vi /home/terminal/Doku/sftp/tests/files/users.conf
+pwd
+ls
+docker run \ -v /home/terminal/Doku/sftp/tests/files/users.conf:/etc/stfp/users.conf:ro \ -v mySftpVolume:/home/terminal/ \ -p 2222:22 -d atmoz/sftp
+docker run && -v /home/terminal/Doku/sftp/tests/files/users.conf:/etc/stfp/users.conf:ro && -v mySftpVolume:/home/terminal/ %% -p 2222:22 -d atmoz/sftp
+docker run -v /home/terminal/Doku/sftp/tests/files/users.conf:/etc/stfp/users.conf:ro -v mySftpVolume:/home/terminal/ -p 2222:22 -d atmoz/sftp
+sudo docker run -v /home/terminal/Doku/sftp/tests/files/users.conf:/etc/stfp/users.conf:ro -v mySftpVolume:/home/terminal/ -p 2222:22 -d atmoz/sftp
+sudo docker ps
+sudo docker stop keen_ardinghelli
+sudo docker run -v /home/terminal/Doku/sftp/tests/files/users.conf:/etc/stfp/users.conf:ro -v mySftpVolume:/home/terminal/ -p 2222:22 -d atmoz/sftp
+sudo docker ps
+sudo docker run -p 2222:22 -d atmoz/sftp foo:pass:::upload
+sudo docker ps
+sudo docker stop compassionate_goldwasser
+sudo docker run -v /home/terminal/Doku/sftp/tests/files/users.conf:/etc/sftp/users.conf:ro && v mySftp:/home  -p 2222:22 -d atmoz/sftp 
+sudo docker run -v /home/terminal/Doku/sftp/tests/files/users.conf:/etc/sftp/users.conf:ro && v mySftp:/home -p 2222:22 -d atmoz/sftp 
+sudo docker run && -v /home/terminal/Doku/sftp/tests/files/users.conf:/etc/sftp/users.conf:ro && v mySftp:/home -p 2222:22 -d atmoz/sftp 
+sudo docker run -v /home/terminal/Doku/sftp/tests/files/users.conf:/etc/sftp/users.conf:ro -v mySftp:/home -p 2222:22 -d atmoz/sftp 
+sudo docker ps
+sudo docker exec -it azzling_buck /bin/bash
+sudo docker ps
+sudo docker exec -it dazzling_buck /bin/bash
+sudo docker ps
+sudo docker run -v /home/terminal/Doku/sftp/tests/files/users.conf:/etc/sftp/users.conf:ro -v mySftp:/home -p 2222:22 -d atmoz/sftp
+sudo docker ps
+sudo docker exec -it adoring_kalam /bin/bash
+sftp -P 2222 bar@172.31.34.60
+sh-keygen -f "/home/terminal/.ssh/known_hosts" -R "[172.31.34.60]:2222"
+ssh-keygen -f "/home/terminal/.ssh/known_hosts" -R "[172.31.34.60]:2222"
+sftp -P 2222 bar@172.31.34.60
+sudo docker ps
+locate wordpress
+sudo docker ps
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress3/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress4/mysql:/var/lib/mysql -v /data/container/wordpress4/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress4/wp-content:/var/www/html/wordpress/wp-content --name penis wordpress:7
+sudo docker ps
+ls
+sudo docker stop penis
+sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress3/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress3/mysql:/var/lib/mysql -v /data/container/wordpress3/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress3/wp-content:/var/www/html/wordpress/wp-content --name Wordpress1 wordpress:7
+sudo docker run --rm -p 81:80 -p 3307:3306 -p 444:443 -d -v /data/container/wordpress4/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress4/mysql:/var/lib/mysql -v /data/container/wordpress4/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress4/wp-content:/var/www/html/wordpress/wp-content --name Wordpress2 wordpress:7
+sudo docker ps
+sudo docker run --rm -p 82:80 -p 3308:3306 -p 445:443 -d -v /data/container/wordpress5/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress5/mysql:/var/lib/mysql -v /data/container/wordpress5/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress5/wp-content:/var/www/html/wordpress/wp-content --name Wordpress3 wordpress:7
+sudo docker ps
+sudo docker run -p 2222:22 -d atmoz/sftp bar:pass:::upload
+sudo docker run -p 2222:22 -d atmoz/sftp foo:pass:::upload
+sudo docker run -p 2223:22 -d atmoz/sftp foo:pass:::upload
+sudo docker ps
+stop docker adoring_kalam
+sudo docker stop adoring_kalam
+cd /data
+ls
+cd container
+ls
+cd ~/Doku
+ls
+cd Dockerfile
+ls
+cd container
+ls
+vi Dockerfile
+sudo docker pull apache:latest
+docker hub apache
+sudo docker pull apache2:latest
+sudo docker pull httpd:latest
+apt-get install libapache2-mod-proxy-html a2enmod mod_proxy
+sudo apt-get install libapache2-mod-proxy-html a2enmod mod_proxy
+ifconfig
+sudo docker ps
+sudo docker exec -it adoring_kala /bin/bash
+sudo docker exec -it Webserver /bin/bash
+sudo docker run --rm -p 82:80 -p 3308:3306 -p 445:443 -d -v /data/container/wordpress5/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress5/mysql:/var/lib/mysql -v /data/container/wordpress5/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress5/wp-content:/var/www/html/wordpress/wp-content --name Wordpress3 wordpress:7
+sudo docker exec -it wordpress3 /bin/bash
+sudo docker ps
+sudo docker exec -it Wordpress3 /bin/bash
+sudo docker ps
+sudo docker exec -it Webserver /bin/bash
+cd /etc/hosts
+cd etc
+cd ..
+cd etc
+cd hosts
+ll
+vi hosts
+sudo nano hosts
+ping wordpress1.de
+sudo apt get install AJP13
+sudo apt install AJP13
+sudo apt get AJP13
+sudo apt install ajp13
+docker hub httpd
+sudo docker hub
+sudo docker pull httpd:latest
+sudo docker run -p 80:80 --name Webserver httpd:latest
+sudo docker run -d -p 80:80 --name Webserver httpd:latest
+sudo docker rm webserver
+sudo docker rm Webserver
+sudo docker run --rm -d -p 80:80 --name Webserver httpd:latest
+vi /usr/local/apache2/conf
+cd /usr/local/apache2/conf
+/usr/local/apache2/
+sudo docker pull rgoyard/apache-proxy_latest
+sudo docker pull rgoyard/apache-proxy
+sudo docker pull rgoyard/apache-proxy:latest
+sudo docker run --rm debian
+sudo docker ps
+docker images
+sudo docker images
+sudo docker run --rm -d -p 80:80 --name Debian debian:latest
+sudo docker run --rm -d --name Debian debian:latest
+docker exec -it Debian /bin/bash
+sudo docker exec -it Debian /bin/bash
+sudo docker ps
+sudo docker run --rm -d --name Debian debian:latest
+sudo docker exec -it Debian /bin/bash
+sudo docker run --rm -d --name Debian debian:latest
+sudo docker ps
+sudo docker run --rm --name Debian debian:latest
+sudo docker ps
+sudo docker run debian:latest
+sudo docker run -it debian:latest /bin/bash
+cd ..
+cd /et/hosts
+cd /etc
+sudo nano hosts
+sudo docker ps
+sudo docker stop apache-loadbalacner
+sudo docker stop apache-loadbalancer
+sudo docker stop httpd-loadbalancer
+cd /data/container/
+ls
+cd config
+ls
+cd apache
+. cd apache
+cd . apache
+cd ..
+cd apache
+ls
+cd config
+ls
+
+cd /data/
+ls
+cd container
+ls
+cd apache 
+ll
+cd config
+ll
+docker images
+sudo docker images
+docker run -p 80:80 -v  /etc/apache2/sites-available:/data/container/apache/config httpd:latest
+sudo docker run -p 80:80 -v  /etc/apache2/sites-available:/data/container/apache/config httpd:latest
+sudo docker run -p 80:80 -d --rm -v /etc/apache2/sites-available:/data/container/apache/config httpd:latest
+sudo docker ps
+docker stop romantic_cheby
+sudo docker sto romantic_cheby
+sudo docker stop romantic_cheby
+sudo docker ps
+sudo docker stop romantic_cheby
+sudo docker stop 3f8f731d7b5a
+sudo docker run -p 80:80 -d --rm -v /etc/apache2/sites-available:/data/container/apache/config --name httpd-loadbalancer  httpd:latest
+nano 000-default.conf 
+sudo chown 777 000-default.conf
+sudo docker restart httpd-loadbalancer
+sudo docker exec -it /bin/bash
+sudo docker exec -it httpd-loadbalancer  /bin/bash
+sudo docker run -p 80:80 -d --rm -v /etc/apache2/sites-available:/data/container/apache/config --name httpd-loadbalancer  httpd:latest
+docker exec -it httpd-loadbalancer /bin/bash
+sudo docker exec -it httpd-loadbalancer /bin/bash
+sudo docker stop httpd-loadbalancer
+sudo docker run -p 80:80 -d --rm -v /usr/local/apache2/conf/config:/data/container/apache/config --name httpd-loadbalancer  httpd:latest
+sudo docker exec -it httpd-loadbalancer /bin/bash
+sudo docker run -p 80:80 -d --rm -v /data/container/apache/config:/usr/local/apache2/conf/config/ --name httpd-loadbalancer  httpd:latest
+docker exec -it httpd-loadbalancer /bin/bash
+sudo docker exec -it httpd-loadbalancer /bin/bash
+cd /usr/local/apache2/conf/config/
+ls
+ll
+cd /data/container/apache/config/
+ls
+sudo nano httpd.conf
+docker exec -it httpd-loadbalancer /bin/bash
+sudo docker exec -it httpd-loadbalancer /bin/bash
+ls
+nano 000-default.conf 
+rn --help
+rn -man
+rn -help
+ls
+sudo docker ps
+sudo docker exec -it xenodochial_lovelace /bin/bash
+sudo docker ps
+sudo docker exec -it httpd-loadbalancer 
+sudo docker exec -it httpd-loadbalancer /bin/bash
+sudo docker ps
+docker inspect xenodochial_lovelace
+sudo docker inspect xenodochial_lovelace
+mod_proxy
+sudo docker exec -it Webserver /bin/bash
+cd /var/www/html/
+ls
+ll
+cd wordpress
+ll
+cd ..
+ls
+/cd /etc/httpd
+cd /etc/httpd
+cd /
+cd etc
+ls
+cd httpd
+locate httpd
+systemctl status httpd
+sudo systemctl status apache2.service 
+cd apache2
+ls
+vi apache2.conf
+nano apache2.conf
+sudo nano apache2.conf
+ll
+cd sites-available/
+ls
+sudo nano 000-default.conf 
+pwd
+mkdir -p /data/container/apache/config/
+cp /etc/apache2/sites-available/000-default.conf /data/container/apache/config
+cd /data/container/apache/config/
+ls
+sudo nano 000-default.conf 
+netstat -tpln
+sudo docker run --rm -p 81:80 -p 3308:3306 -p 445:443 -d -v /data/container/wordpress3/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress3/mysql:/var/lib/mysql -v /data/container/wordpress3/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress3/wp-content:/var/www/html/wordpress/wp-content --name Wordpress3 wordpress:7
+docker pull debian
+sudo docker pull debian
+sudo docker exec -it httpd-loadbalancer /bin/bash
+sudo docker ps
+docker exec -it xenodochial_lovelace /bin/bash
+sudo docker exec -it xenodochial_lovelace /bin/bash
+sudo docker ps
+cd /usr/local/apache2/conf/original/extra/httpd-vhosts.conf
+sudo docker exec -it xenodochial_lovelace /bin/bash
+sudo docker ps
+ls
+ll
+ls
+sudo docker run -p 80:80 -d --rm -v --name httpd-loadbalancer  httpd:latestf
+sudo docker run -p 80:80 -d --rm -v --name httpd-loadbalancer  httpd:latest
+sudo docker run -p 80:80 -d --rm -v -- httpd:latest
+cd ..
+sudo docker images
+sudo docker run -p 80:80 -d --rm -v --name httpd-loadbalancer httpd:latest
+sudo docker run -p 80:80 -d --rm -v httpd:latest
+sudo docker run -p 80:80 -d --rm -v --name httpload  httpd:latest
+sudo docker run -p 80:80 -d --rm httpd:latest
+sudo docker ps
+ls
+sudo docker stop musing_cartwright
+sudo docker run -p 80:80 -d --rm --name httpd-loadbalancer httpd:latest
+sudo docker exec -it httpd-loadbalancer /bin/bash
+sudo docker ps
+sudo docker stop httpd-loadbalancer
+s
+sudo docker ps
+cd /data
+ls
+cd container
+ls
+cd config
+ls
+cd ..
+cd apache
+ls
+cd config
+ls
+cd extra
+ls
+vi httpd-vhosts.conf 
+sudo docker ps
+sudo docker exec -it httpd-loadbalancer /bin/bash
+sudo docker ps
+ls
+sudo docker exec -it httpd-loadbalancer /bin/bash
+cd /data/container/apache/config
+cd /data/container/apache/
+ls
+cd config
+ls
+cd extra
+ls
+nano httpd-vhosts.conf 
+cd /etc/hosts
+cd /etc
+ls
+sudo nano hosts
+ls
+cd
+sudo docker ps
+cd /data/
+ls
+cd container
+ls
+cd apache
+ls
+cd config
+sl
+ls
+pwd
+locate mod_proxy_http
+sudo docker ps
+docker images
+sudo docker images
+cd /usr/local/apache2/conf/original/extra/httpd-vhosts.conf
+updatedb
+sudo updatedb
+locate httpd-vhosts.conf
+sudo docker run -p 80:80 -d --rm -v /data/container/apache/config:/usr/local/apache2/conf/config/ --name httpd-loadbalancer  httpd:latest
+sudo docker rmi debian
+sudo docker rmi -f debian
+docker images
+sudo docker images
+sudo docker run -p 80:80 -d --rm -v /data/container/apache/config:/usr/local/apache2/conf/config/ --name httpd-loadbalancer  httpd:latest
+sudo docker ps
+sudo docker exec -it httpd-loadbalancer /bin/bash
+cd /data/container
+ls
+cd apache
+ls
+cd config
+ls
+nano 000-default.conf 
+mkdir extra
+mv 000-default.conf ./extra/httpd-vhosts.conf
+cd extra
+ls
+cd ..
+ls
+pwd
+cd extra
+pw
+pwd
+ls
+sudo docker stop httpd-loadbalancer
+sudo docker ps
+sudo docker run -p 80:80 -d --rm -v ^Cata/container/apache/config/extra/httpd-vhosts.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf --name httpd-loadbalancer httpd:latest
+sudo docker run -p 80:80 -d --rm -v /data/container/apache/config/extra/httpd-vhosts.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf --name httpd-loadbalancer httpd:latest
+sud onano /data/container/apache/config/extra/httpd-vhosts.conf
+sudo nano /data/container/apache/config/extra/httpd-vhosts.conf
+sudo docker run --rm -p 81:80 -p 3308:3306 -p 445:443 -d -v /data/container/wordpress3/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress3/mysql:/var/lib/mysql -v /data/container/wordpress3/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress3/wp-content:/var/www/html/wordpress/wp-content --name Wordpress3 wordpress:7
+docker images
+sudo docker images
+sudo docker ps
+ls
+sudo docker ps
+sudo docker exec -it httpd_loadbalancer /bin/bash
+ls
+cd ..
+ls
+pwd
+sudo docker ps
+sudo docker stop httpd-loadbalancer
+sudo docker run -p 80:80 -d --rm -v /data/container/apache/config/extra/httpd-vhosts.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf -v /data/container/apache/config/httpd.conf:/usr/local/apache2/conf/httpd.conf --name httpd-loadbalancer httpd:latest
+sudo docker ps
+sudo docker run -p 80:80 --rm -v /data/container/apache/config/extra/httpd-vhosts.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf -v /data/container/apache/config/httpd.conf:/usr/local/apache2/conf/httpd.conf --name httpd-loadbalancer httpd:latest
+locate ap_proxy_location_reverse_map
+sudo updatedb
+locate ap_proxy_location_reverse_map
+ls
+nano httpd.conf
+sudo nano httpd.conf
+sudo docker run -p 80:80 --rm -v /data/container/apache/config/extra/httpd-vhosts.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf -v /data/container/apache/config/httpd.conf:/usr/local/apache2/conf/httpd.conf --name httpd-loadbalancer httpd:latest
+sudo docker ps
+cd /data/container/apache/
+ls
+cd config
+ll
+cd extra
+ll
+sudo nano httpd-vhosts.conf 
+curl localhost:81/wordpress
+curl -l localhost:81/wordpress
+curl -iL --max-redirs100 localhost:81/wordpress
+curl -iL --max -redirs100 localhost:81/wordpress
+curl -iL --max-redirs 100 localhost:81/wordpress
+locate wp-config.php
+sudo nano /data/container/wordpress3/config/wp-config.php
+sudo iptables -L
+locate wp-config.php
+nano /data/container/wordpress2/config/wp-config.php
+sudo docker ps
+nano /data/container/wordpress3/config/wp-config.php
+log
+sudo systemctl status apache2.service -l --no-pager
+locate httpd.conf
+sudo nano  /data/container/apache/config/httpd.conf
+sudo docker run -p 80:80 -d --rm -v /data/container/apache/config/extra/httpd-vhosts.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf -v /data/container/apache/config/httpd.conf:/usr/local/apache2/conf/httpd.conf --name httpd-loadbalancer httpd:latest
+sudo docker ps
+sudo docker run --rm -p 81:80 -p 3308:3306 -p 445:443 -d -v /data/container/wordpress3/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress3/mysql:/var/lib/mysql -v /data/container/wordpress3/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress3/wp-content:/var/www/html/wordpress/wp-content --name Wordpress3 wordpress:7
+cd /data
+ls
+cd container
+ls
+cd config
+ls
+cd ..
+cd apache
+ls
+sudo docker ps
+sudo update
+sudo apt update
+sudo docker run -p 80:80 -d --rm -v /data/container/apache/config/extra/httpd-vhosts.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf -v /data/container/apache/config/httpd.conf:/usr/local/apache2/conf/httpd.conf --name httpd-loadbalancer httpd:latest
+sudo docker run --rm -p 81:80 -p 3308:3306 -p 445:443 -d -v /data/container/wordpress3/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress3/mysql:/var/lib/mysql -v /data/container/wordpress3/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress3/wp-content:/var/www/html/wordpress/wp-content --name Wordpress3 wordpress:7
+sudo docker ps
+locate v-host
+clear
+cd /data/container
+ls
+cd apache
+ls
+cd config
+ls
+cd extra
+ls
+vi httpd-vhosts.conf 
+sudo nano httpd-vhosts.conf 
+ll
+cd ..
+ls
+chmod 777 extra
+ll
+chmod -r 777 extra
+chmod -R 777 extra
+sudo chmod -R 777 extra
+sudo docker restart httpd-loadbalancer
+cd ..
+ls
+cd ..
+ll
+cd apache
+ks
+ls
+cd .. 
+cd ..
+ls
+cd container
+ll
+cd apache
+ls
+cd config
+ls
+nano httpd.conf
+apt-get install optipng
+sudo apt-get install optipng
+optipng *.png
+cd ..
+ls
+cd 11
+apt-get install optipng
+cd ..
+ls
+cd 01
+ll
+sudo apt-get install trimage
+sudo apt-get install imagemagick
+cd ..
+ls
+cd hamvoba-ipe
+ll
+cd 2019
+cd ..
+ls
+cd 2019
+ls
+mogrify man
+mogrify -quality 60 *.jpg
+ll
+cd 02
+mogrify -quality 60 *.jpg
+ls
+cd ..
+ls
+mogrify -quality 70 *.jpg -r
+cd 03
+mogrify -quality 60 *.jpg
+cd ..
+ls
+cd 02
+mogrify -quality 60 *.jpg
+cd ./03
+cd .. /03
+cd .. 
+cd 03
+mogrify -quality 60 *.jpg
+cd ..
+cd 04
+mogrify -quality 60 *.jpg
+cd ..
+cd 05
+mogrify -quality 60 *.jpg
+cd ..
+cd 08
+mogrify -quality 60 *.jpg
+cd ..
+cd 09
+mogrify -quality 60 *.jpg
+cd ..
+cd 10
+mogrify -quality 60 *.jpg
+cd ..
+cd 12
+mogrify -quality 60 *.jpg
+cd ..
+ls
+cd ..
+ll
+cd 2020
+ll
+cd 04
+mogrify -quality 60 *.jpg
+cd ..
+cd 07
+mogrify -quality 60 *.jpg
+cd ..
+cd 08
+mogrify -quality 60 *.jpg
+cd ..
+ls
+cd hhonig/
+cd 
+ls
+cd bildersarah
+cd BilderSarah
+ls
+cd hhonig
+ls
+cd 2019
+ls
+cd 08
+ls
+mogrify -quality 60 *.*
+cd ..
+ls
+cd 09
+ls
+mogrify -quality 60 *.*
+ll
+cd ..
+ll
+cd 10
+mogrify -quality 60 *.*
+cd ..
+ls
+cd ..
+ls
+cd 2020
+ll
+cd 01
+mogrify -quality 60 *.*
+cd ..
+cd 04
+mogrify -quality 60 *.*
+cd ..
+cd 11
+mogrify -quality 60 *.*
+cd ..
+ll
+cd kindergarten-zwergentreff/
+ll
+cd 2017
+ll
+cd 05
+mogrify -quality 60 *.*
+cd ..
+cd 07
+mogrify -quality 60 *.*
+cd ..
+ls
+cd 2020
+ls
+cd 04
+mogrify -quality 60 *.*
+cd ..
+cd 05 mogrify -quality 60 *.*
+cd 05
+mogrify -quality 60 *.*
+sudo mogrify -quality 60 *.*
+ll
+cd ..
+cd .
+cd ..
+ls
+cd 2017
+ll
+cd ..
+ls
+cd 
+cd 'medical master export'
+cd medical master export
+cd BilderSarah
+ls
+cd medical master export
+cd 'medical master export'
+ls
+cd 202
+cd 2020
+ls
+cd 06
+mogrify -quality 60 *.*
+cd ..
+cd 07
+mogrify -quality 60 *.*
+sudo apt-get update
+sudo apt get install jpegoptim
+sudo apt get jpegoptim
+sudo apt-get install jpegoptim
+locate BilderSarah
+sudo updatedb
+locate BilderSarah
+cd /home/terminal/BilderSarah/
+ll
+jpegoptim *.JPG
+cd hamvoba-ipe/
+ls
+cd 2019
+ls
+jpegoptim *.JPG
+cd 02
+ll
+jpegoptim *.JPG
+jpegoptim *.jpg
+cd ..
+ls
+cd 03
+jpeoptim *.jpg
+jpegoptim *.jpg
+cd ..
+ls
+cd 04
+jpeoptim *.jpg
+jpegoptim *.jpg
+cd ..
+ls
+cd 05
+ll
+jpegoptim *.jpg
+cd ..
+ls
+cd 08
+jpegoptim *.jpg
+ls
+cd ..
+ll
+cd 09
+jpegoptim *.jpg
+ll
+cd ..
+ls
+cd 10
+jpegoptim *.jpg
+ls
+cd ..
+ll
+cd 12
+jpegoptim *.jpg
+cd ..
+ls
+cd 2020
+ll
+cd 04
+ll
+jpegoptim *.jpg
+ll
+cd ..
+ll
+cd 07
+jpegoptim *.jpg
+cd ..
+ls
+cd 08
+jpegoptim *.jpg
+ls
+cd ..
+ll
+cd ..
+ll
+cd ..
+ls
+cd hhonig/
+ls
+cd 2019
+ls
+cd 08
+jpegoptim *.jpg
+cd ..
+ls
+cd 09
+jpegoptim *.jpg
+cd ..
+ls
+cd 10
+jpegoptim *.jpg
+cd ..
+ls
+cd ..
+ls
+cd 2020
+ll
+cd 01
+jpegoptim *.jpg
+cd ..
+ls
+cd 004
+cd 04
+jpegoptim *.jpg
+ll
+jpegoptim *.jpg
+sudo docker ps
+sudo docker run --rm -p 81:80 -p 3308:3306 -p 445:443 -d -v /data/container/wordpress3/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress3/mysql:/var/lib/mysql -v /data/container/wordpress3/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress3/wp-content:/var/www/html/wordpress/wp-content --name Wordpress3 wordpress:7
+sudo docker run -p 80:80 -d --rm -v /data/container/apache/config/extra/httpd-vhosts.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf -v /data/container/apache/config/httpd.conf:/usr/local/apache2/conf/httpd.conf --name httpd-loadbalancer httpd:latest
+sudo docker ps
+sudo docker exec -it httpd-loadbalancer /bin/bash
+curl wordpress1.de
+sudo docker ps
+locate wp-config.php
+sudo nano /data/container/wordpress3/config/wp-config.php
+sudo docker images
+cd /data
+ls
+cd container
+ls
+cd wordpress3
+ls
+cd ..
+locate Dockerfile
+sudo nano /home/terminal/Doku/Dockerfile
+sudo nano /home/terminal/Doku/Dockerfile/container/Dockerfile
+
+sudo docker exec -it wordpress3 /bin/bash
+sudo docker exec -it Wordpress3 /bin/bash
+sudo docker exec -it httpd-loadbalancer /bin/bash
+cd /data
+cd container
+ls
+cd config
+ls
+cd ..
+cd apache
+ll
+cd config
+ls
+nano httpd.conf
+sudo docker exec -it httpd-loadbalancer /bin/bash
+ls
+cd extra
+ls
+sudo nano httpd-vhosts.conf 
+sudo docker ps
+dock restart httpd-loadbalancer
+sudo docker restart httpd-loadbalancer
+sudo docker ps
+sudo docker run -p 80:80 -d --rm -v /data/container/apache/config/extra/httpd-vhosts.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf -v /data/container/apache/config/httpd.conf:/usr/local/apache2/conf/httpd.conf --name httpd-loadbalancer httpd:latest
+sudo docker ps
+sudo docker ps -a
+sudo docker ps -a | grep httpd
+sudo docker stop httpd-loadbalancer
+sudo docker run -p 80:80 -d --rm -v /data/container/apache/config/extra/httpd-vhosts.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf -v /data/container/apache/config/httpd.conf:/usr/local/apache2/conf/httpd.conf --name httpd-loadbalancer httpd:latest
+restart docker
+sudo restart docker
+sudo docker restart
+sudo systemctl restart docker
+sudo docker ps
+sudo docker run -p 80:80 -d --rm -v /data/container/apache/config/extra/httpd-vhosts.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf -v /data/container/apache/config/httpd.conf:/usr/local/apache2/conf/httpd.conf --name httpd-loadbalancer httpd:latest
+sudo docker run --rm -p 81:80 -p 3308:3306 -p 445:443 -d -v /data/container/wordpress3/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress3/mysql:/var/lib/mysql -v /data/container/wordpress3/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress3/wp-content:/var/www/html/wordpress/wp-content --name Wordpress3 wordpress:7
+ls
+nano httpd-vhosts.confj
+sudo docker restart
+sudo docker restart httpd-loadbalancer
+sudo docker ps
+sudo docker pull jwilder/nginx-proxy:latest
+sudo docker images
+sudo docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy
+sudo docker ps
+sudo docker stop httpd-loadbalancer
+docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy
+sudo docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy
+sudo docker ps
+cd /data/container/apache/config/extra/
+ls
+rm httpd-vhosts.confj
+nano httpd-vhosts.conf 
+sudo docker restart httpd-loadbalancer
+ls
+cd .
+cd /
+ls
+sudo docker ps
+cd ls
+cd /data
+ls
+cd container
+ls
+cd apche
+cd apache/
+cd extra
+ls
+cd config/extra
+ls
+nano httpd-vhosts.conf 
+sudo docker restart httpd-loadbalancer
+ifconfig
+cd /
+cd container
+ls
+cd data/container
+ls
+cd /usr/local/apache2/log
+sudo docker ps
+sudo docker run --rm -p 81:80 -p 3308:3306 -p 445:443 -d -v /data/container/wordpress3/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress3/mysql:/var/lib/mysql -v /data/container/wordpress3/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress3/wp-content:/var/www/html/wordpress/wp-content --name Wordpress3 wordpress:7
+sudo docker run -p 80:80 -d --rm -v /data/container/apache/config/extra/httpd-vhosts.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf -v /data/container/apache/config/httpd.conf:/usr/local/apache2/conf/httpd.conf --name httpd-loadbalancer httpd:latest
+sudo docker exec -it httpd-loadbalancer /bin/bash
+c /data/container/
+cd data
+cd /data
+cd container
+ls
+cd apache
+ls
+cd config
+ls
+cd extra
+ls
+rm -httpd-vhosts.confj
+rm httpd-vhosts.confj
+nano httpd-vhosts.conf
+sudo docker restart httpd-loadbalancer
+sudo docker exec -it httpd-loadbalancer /bin/bash
+cd /
+ls
+sudo docker run --rm -p 82:80 -p 3308:3306 -p 446:443 -d -v /data/container/wordpress4/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress4/mysql:/var/lib/mysql -v /data/container/wordpress4/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress4/wp-content:/var/www/html/wordpress/wp-content --name Wordpress4 wordpress:7
+sudo docker run --rm -p 82:80 -p 3309:3306 -p 446:443 -d -v /data/container/wordpress4/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress4/mysql:/var/lib/mysql -v /data/container/wordpress4/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress4/wp-content:/var/www/html/wordpress/wp-content --name Wordpress4 wordpress:7
+sudo docker run --rm -p 83:80 -p 3310:3306 -p 447:443 -d -v /data/container/wordpress5/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress5/mysql:/var/lib/mysql -v /data/container/wordpress5/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress5/wp-content:/var/www/html/wordpress/wp-content --name Wordpress5 wordpress:7
+sudo docker ps
+sudo updatedb
+locate wp-config.php
+sudo nano /data/container/wordpress3/config/wp-config.php
+sudo nano /data/container/wordpress4/config/wp-config.php
+sudo nano /data/container/wordpress5/config/wp-config.php
+sudo docker restart all
+sudo docker ps
+sudo docker restart wordpress3
+sudo docker restart Wordpress3
+sudo docker restart Wordpress4
+sudo docker restart Wordpress5
+sudo docker ps
+locate *.sh
+cd ~
+cd Doku
+ls
+cd deployment
+ls
+nano mysql_se-deb.sh
+nano -l mysql_se-deb.sh
+cd ..
+ls
+mkdir httpd-loadbalancer
+cd httpd-loadbalancer/
+git clone https://github.com/SlothOG/httpd-loadbalancer.git
+pwd
+cp /data/container/apache/config/ /home/terminal/httpd-loadbalancer
+cp -r /data/container/apache/config/ /home/terminal/httpd-loadbalancer
+ls
+cd ..
+ls
+cd httpd-loadbalancer/
+ls
+cd httpd-loadbalancer/
+ls
+cd ..
+rm httpd-loadbalancer/
+rm -rf httpd-loadbalancer/
+ls
+cd config
+ls
+cd extra
+cd .. 
+cd ..
+ls
+mkdir docker
+s
+ls
+cd docker
+touch loadbalancerstart.sh
+sudo nano loadbalancerstart.sh
+ls
+sudo nano loadbalancerstart.sh
+cd ..
+git status
+mv config/ /tmp/
+ls
+mv docker/ /tmp/
+ls
+git status
+git init
+mv /tmp/config .
+ls
+mv /tmp/docker .
+ls
+git add 
+git add .
+git status
+git commit -m "First Commit"
+git branch -M Main
+git remote add origin https://github.com/SlothOG/httpd-loadbalancer.git
+git push -u origin main
+git push -u origin Main
+lsw
+ls
+cd ..
+mkdir wordpress1rep
+ls
+cd wordpress1rep/
+cp -r /data/container/wordpress1 wordpress1rep
+sudo cp -r /data/container/wordpress1 wordpress1rep
+ls
+cd ..
+ls
+cd wordpress1rep/
+ls
+rm -rm wordpress1rep
+rm wordpress1rep
+rm -rf wordpress1rep
+sudo rm -rf wordpress1rep
+ls
+sudo cp -r /data/container/wordpress1 
+pwd
+sudo cp -r /data/container/wordpress1 /home/terminal/
+ls
+cd ..
+ls
+cd wordpress1
+ls
+cd ..
+ls
+rm -rf wordpress1
+sudo rm -rf wordpress1
+ls
+cd wordpress1rep/
+ls
+sudo cp -r /data/container/wordpress1 /home/terminal/wordpress1rep
+ls
+git init
+git commit -m "Insert Your Message Here"
+git branch -M 
+git branch -M main
+git add wordpress1/
+sudo docker ps
+ls
+rm -rf wordpress1
+sudo rm -rf wordpress1/
+sudo docker stop wordpress5
+sudo docker ps
+sudo docker stop Wordpress5
+ls
+sudo cp -r /data/container/wordpress5 /home/terminal/wordpress1rep
+ls
+git init
+git status
+git add wordpress5/
+sudo git add wordpress5/
+git status
+git commit
+sudo git commit
+ls
+git status
+git commit
+git push -o origin main
+git push --set-upstream main master
+git push --set-upstream main
+git push --set-upstream main master
+git status
+git log
+git branch -M master
+git branch -M main
+git branch -M Main
+git branch master
+git checkout -b master
+git push
+git commit
+git log
+git push
+git remote add master https://github.com/SlothOG/wordpress1.git
+git pusgh
+git push
+git push master
+git push --set-upstream master master
+sudo docker run --rm -p 83:80 -p 3310:3306 -p 447:443 -d -v /data/container/wordpress5/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress5/mysql:/var/lib/mysql -v /data/container/wordpress5/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress5/wp-content:/var/www/html/wordpress/wp-content --name Wordpress5 wordpress:7
+sudo docker run -p 80:80 -d --rm -v /data/container/apache/config/extra/httpd-vhosts.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf -v /data/container/apache/config/httpd.conf:/usr/local/apache2/conf/httpd.conf --name httpd-loadbalancer httpd:latest
+sudo docker ps
+sudo docker restart Wordpress5
+docker pull aveltens/wordpress-backup
+sudo docker pull aveltens/wordpress-backup
+sudo docker images
+sudo docker ps
+sudo docker run -p 80:80 -d --rm -v /data/container/apache/config/extra/httpd-vhosts.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf -v /data/container/apache/config/httpd.conf:/usr/local/apache2/conf/httpd.conf --name httpd-loadbalancer httpd:latest
+sudo update
+sudo apt get update
+clear
+sudo apt install update
+sudo apt update
+sudo update
+sudo apt update
