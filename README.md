@@ -82,9 +82,9 @@
   * start                                             Container starten
   * --name                                            BSP --name wordpress3 wordpress:2
   * sudo docker ps                                    
-  * sudo docker run --rm -p 80:80 -p 3306:3306 -p 443:443 -d -v /data/container/wordpress1/wp-content:/var/www/html/wordpress/wp-content -v /data/container/wordpress1/db/mysql:/var/lib/mysql -v /data/container/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d --name wordpress1 wordpress:5
+  * sudo docker run -p 80:80 -d --rm -v /data/container/apache/config/extra/httpd-vhosts.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf -v /data/container/apache/config/httpd.conf:/usr/local/apache2/conf/httpd.conf --name httpd-loadbalancer httpd:latest <---  Loadbalancer
 
-
+  * sudo docker run --rm -p 83:80 -p 3310:3306 -p 447:443 -d -v /data/container/wordpress5/config/wp-config.php:/var/www/html/wordpress/wp-config.php -v /data/container/wordpress5/mysql:/var/lib/mysql -v /data/container/wordpress5/config/mariadb.conf.d:/etc/mysql/mariadb.conf.d -v  /data/container/wordpress5/wp-content:/var/www/html/wordpress/wp-content --name Wordpress5 wordpress:7             <--- Container
 
 
 
