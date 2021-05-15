@@ -1,8 +1,7 @@
 FROM ubuntu:latest
 
 LABEL maintainer=" Pig Benis The Great "
-
-RUN echo "Current OS: $DISTRO"  
+ 
 RUN apt -y update
 RUN export DEBIAN_FRONTEND=noninteractive
 RUN ln -fs /usr/share/zoneinfo/Europe/Berlin /etc/localtime
